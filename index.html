@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="form">
+        <nav>
+            <p>Registration Form</p>
+        </nav>
+        <section>
+            <div class="form-2">
+                <div class="page">
+                    <label class="field field_v1">
+                        <input class="field__input firstname" placeholder="e.g. Virat">
+                        <span class="field__label-wrap">
+                            <span class="field__label">First name</span>
+                        </span>
+                    </label>
+                    <label class="field field_v2">
+                        <input class="field__input lastname" placeholder="e.g. Kohli">
+                        <span class="field__label-wrap">
+                            <span class="field__label">Last name</span>
+                        </span>
+                    </label>
+                    <label class="field field_v3">
+                        <input class="field__input email" placeholder="e.g. xyz@gmail.com">
+                        <span class="field__label-wrap">
+                            <span class="field__label">E-mail</span>
+                        </span>
+                    </label>
+                    <label class="field field_v2">
+                        <input class="field__input mo" placeholder="e.g. +123456789">
+                        <span class="field__label-wrap">
+                            <span class="field__label">Mobile No.</span>
+                        </span>
+                    </label>
+                    <label class="field field_v2">
+                        <input class="field__input skill" placeholder="e.g. Technical">
+                        <span class="field__label-wrap">
+                            <span class="field__label">skill</span>
+                        </span>
+                    </label>
+                    <button id="btn">
+                        <p id="btnText">Submit</p>
+                        <div class="check-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            <div class="vl"></div>
+            <div class="result">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>E-mail</th>
+                            <th>Mobile No.</th>
+                            <th>Skill</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="firstname">
+                   
+                           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+
+        btn.onclick = () => {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");
+        };
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
